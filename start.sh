@@ -10,7 +10,7 @@ echo Database is now available
 
 bundle exec rails db:chatwoot_prepare
 
-bundle exec rails db:migrate
+#bundle exec rails db:migrate
 
 multirun \
     "bundle exec sidekiq -C config/sidekiq.yml" \
